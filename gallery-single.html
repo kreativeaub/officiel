@@ -100,13 +100,13 @@
           
                       $.ajax({
         type: "GET",
-        url: "https://api.github.com/repos/kreativeaub/kreation/contents/assets/img/gallery/"+category,
+        url: "https://api.github.com/repos/kreativeaub/officiel/contents/assets/img/gallery/"+category,
         dataType: "json",
         success: function(result) {
 
             for (var i = 0; i < result.length; i++) {
               
-              var filename=source_dir+category+"/"+result[i].name;
+              var filename=dir+"/"+result[i].name;
               console.log(filename);
 
               let elm_single_image='<p class="image_p"> </p><div class="swiper-slide"><img  class="shadow-lg class="lazyload" src='+filename+' data-src='+filename+' alt=""></div>'
@@ -125,10 +125,8 @@
               
 
             </div>
-            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+
 
         </div>
 

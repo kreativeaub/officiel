@@ -629,14 +629,6 @@ h6 {
   transition: 0.3s;
 }
 
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
@@ -652,7 +644,7 @@ h6 {
   color: #fff;
 }
 
-.testimonials .testimonial-item h4 {
+.testimonials .testimonial-item h5 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;

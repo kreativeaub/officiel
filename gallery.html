@@ -64,12 +64,13 @@
 
         <script type="text/javascript">
         
-        var dir = "assets/img/behance/";
         var fileextension = ".jpg";
 
           const queryString = window.location.search;
           const urlParams = new URLSearchParams(queryString);
           const category = urlParams.get('category')
+          var dir = "assets/img/behance/"+category+"/";
+
        
       $( document ).ready(function() {
             $.ajax({
@@ -83,7 +84,7 @@
               var category=result[i].name.replace(".jpg", "");
               var category_label=category.replaceAll("_", " ");
               var filename=dir+result[i].name;
-              console.log(result[i].name);
+              console.log(filename);
 
 
               let elm_image='<div class="col-xl-4 col-lg-4 mb-lg-0"><div class="gallery-item h-400"><a href="gallery-single.html?category='+category+'" class="details-link"><img class="lazyload" src='+filename+' data-src='+filename+' class="img-fluid" alt=""><div class="gallery-links d-flex align-items-center justify-content-center"><div class="overlay"><h5><div class="text">'+category_label+'</div></h5></div></a></div></div></div>'
