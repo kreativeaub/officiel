@@ -55,6 +55,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+  text-transform: uppercase;
+
 }
 
 /*--------------------------------------------------------------
@@ -620,38 +622,34 @@ h6 {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
-  margin: 50px 40px;
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
+  margin: 40px 30px;
+  position: relative;
+  min-height: 320px;
   text-align: center;
-  transition: 0.3s;
+}
+
+.testimonials .testimonial-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0 auto;
+
 }
 
 
 
 .testimonials .testimonial-item h4 {
   font-size: 18px;
-  margin: 10px 0 0px 0;
-  color: #7c7c7c;
+  color: var(--color-secondary);
+  margin: 10px 0 5px 0;
   position: relative;
+  text-transform: uppercase;
+
 }
 
-.testimonials .testimonial-item h5 {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0;
-}
 
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
 
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
@@ -688,6 +686,7 @@ h6 {
     transform: scale(1.12);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Pricing Section

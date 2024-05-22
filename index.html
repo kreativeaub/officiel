@@ -87,10 +87,7 @@
                 var filename=dir+result[i].name;
                 console.log(filename);
 
-                
-
-                let category_img='<div class="swiper-slide"><a href="gallery.html?category='+category+'"><div class="testimonial-item"><img class="lazyload" src='+filename+' data-src='+filename+' alt=""> <div class="gallery-links d-flex align-items-center justify-content-center"><h4><div class="text">'+category_label+'</div></h4></div></a></div>'  
-  
+                let category_img='<div class="swiper-slide"><div class="testimonial-item"><a href="gallery.html?category='+category+'"><img class="lazyload" src='+filename+' data-src='+filename+' alt=""></img></a><h4>'+category_label+'</h4></div></div>'  
                 
                 
                 $("#category_items").append(category_img);
