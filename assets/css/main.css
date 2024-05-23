@@ -83,7 +83,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #5bd9a9;
+  background: #d5d8d7;
   margin: 4px 10px;
 }
 
@@ -301,11 +301,12 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
-  font-weight: 400;
-  color: #fff;
+  color: #e6e6e6;
   font-family: var(--font-secondary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .header .logo i {
@@ -616,7 +617,10 @@ h6 {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  margin-top: 80px;
+  margin-top: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  
 }
 
 .testimonials .testimonial-item {
@@ -625,7 +629,9 @@ h6 {
   margin: 40px 30px;
   position: relative;
   min-height: 320px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .testimonials .testimonial-item img {
@@ -634,6 +640,7 @@ h6 {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   margin: 0 auto;
+  
 
 }
 
@@ -641,17 +648,20 @@ h6 {
 
 .testimonials .testimonial-item h4 {
   font-size: 18px;
-  color: var(--color-secondary);
-  margin: 10px 0 5px 0;
-  position: relative;
+  color: rgb(206, 206, 206);
+  position: absolute;
+  bottom: 0;
+  margin-left: 31%;
   text-transform: uppercase;
+  
+  
 
 }
 
 
 
-
 .testimonials .swiper-pagination .swiper-pagination-bullet {
+
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -663,8 +673,25 @@ h6 {
 }
 
 .testimonials .swiper-slide {
-  opacity: 0.3;
+  opacity: 0.4;
 }
+
+
+
+
+.testimonials .swiper-button-prev:after,
+.testimonials .swiper-button-next:after {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
+ 
+}
+
+.testimonials .swiper-button-prev:hover:after,
+.testimonials .swiper-button-next:hover:after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {
