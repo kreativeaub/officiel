@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
+  --color-primary: #39423e;
   --color-secondary: #161718;
 }
 
@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #dbe7b0;
   text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: #7a7e80;
 }
 
 /*--------------------------------------------------------------
@@ -164,7 +164,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: rgba(40, 46, 44, 0.8);
   color: #fff;
 }
 
@@ -424,7 +424,7 @@ h6 {
 
   .navbar .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 11px;
     text-transform: none;
     font-weight: 400;
     text-transform: uppercase;
@@ -627,7 +627,7 @@ h6 {
 .testimonials {
   margin-top: 10px;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   
 }
 
@@ -677,7 +677,7 @@ h6 {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.801);
 }
 
 .testimonials .swiper-slide {
@@ -690,13 +690,7 @@ h6 {
 .testimonials .swiper-button-prev:after,
 .testimonials .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
  
-}
-
-.testimonials .swiper-button-prev:hover:after,
-.testimonials .swiper-button-next:hover:after {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -893,7 +887,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #2cbc85;
+  background: #e2f5fd;
 }
 
 .gallery-single .portfolio-description h2 {

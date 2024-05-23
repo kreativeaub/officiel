@@ -28,6 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
   <!-- =======================================================
   * Template Name: PhotoFolio
   * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
@@ -39,35 +42,13 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Kreative</h1>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links">
-        <a href="https://www.behance.net/KREATIVEAUB" class="twitter"><i class="bi bi-behance"></i></a>
-        <a href="https://vimeo.com/kreativeaub" class="facebook"><i class="bi bi-vimeo"></i></a>
-        <a href="https://www.instagram.com/kreativeaub/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/ayoub-hasnane-8b6683ab/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
+   <!-- ======= Header ======= -->
+   <header id="header" class="header d-flex align-items-center fixed-top">
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+      });
+      </script>
   </header><!-- End Header -->
 
   <main id="main" data-aos="fade" data-aos-delay="1500">
