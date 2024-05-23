@@ -391,6 +391,7 @@ h6 {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+    text-transform: uppercase;
   }
 
   .navbar a:hover,
@@ -413,6 +414,7 @@ h6 {
     background: var(--color-secondary);
     transition: 0.3s;
     border-radius: 4px;
+    text-transform: uppercase;
   }
 
   .navbar .dropdown ul li {
@@ -425,6 +427,7 @@ h6 {
     font-size: 15px;
     text-transform: none;
     font-weight: 400;
+    text-transform: uppercase;
   }
 
   .navbar .dropdown ul a i {
