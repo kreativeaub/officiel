@@ -83,10 +83,8 @@
               for (var i = 0; i < result.length; i++) {
                 
                 var category=result[i].name.replace(".jpg", "");
-                console.log(filename);
                 var category_label=category.replaceAll("_", " ");
                 var filename=dir+result[i].name;
-                console.log(filename);
 
                 let category_img='<div class="swiper-slide"><div class="testimonial-item"><a href="gallery.html?category='+category+'"><img class="lazyload" src='+filename+' data-src='+filename+' alt=""></img></a><h4>'+category_label+'</h4></div></div>'  
                 

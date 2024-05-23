@@ -362,10 +362,12 @@ h6 {
     display: flex;
     list-style: none;
     align-items: center;
+    text-transform: uppercase;
   }
 
   .navbar li {
     position: relative;
+    text-transform: uppercase;
   }
 
   .navbar a,
@@ -415,6 +417,7 @@ h6 {
 
   .navbar .dropdown ul li {
     min-width: 200px;
+    text-transform: uppercase;
   }
 
   .navbar .dropdown ul a {
@@ -594,12 +597,14 @@ h6 {
 .about .content ul {
   list-style: none;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .about .content ul strong {
@@ -865,6 +870,7 @@ h6 {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .gallery-single .portfolio-info ul strong {
@@ -872,6 +878,7 @@ h6 {
   font-weight: 400;
   color: #6b7075;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .gallery-single .portfolio-info .btn-visit {

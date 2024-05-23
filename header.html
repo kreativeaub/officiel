@@ -11,53 +11,31 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-        <ul id="dropdown_category" >
-
+        <ul id="dropdown_category">
           <script type="text/javascript">
-            var dir = "assets/img/category/";
-           
-          $( document ).ready(function() {
-                $.ajax({
-            type: "GET",
-            url: "https://api.github.com/repos/kreativeaub/officiel/contents/assets/img/category",
-            dataType: "json",
-            success: function(result) {
-    
-                for (var i = 0; i < result.length; i++) {
+
+            let categories = ["Celebrety", "Cinematic", "Culinary","Cinematic", "Event" , "Fashion","Portrait"];
+
+               $(document ).ready(function() {
+
+                for (var i = 0; i < categories.length; i++) {
                   
-                  var category=result[i].name.replace(".jpg", "");
-                  var category_label=category.replaceAll("_", " ");
-                  let dropdown_category='<li><a href="gallery.html?category='+category+'">'+category_label+'</a></li>'
-  
+                  var category_label=categories[i];
+                  let dropdown_category='<li><a href="gallery.html?category='+category_label+'">'+category_label+'</a></li>'
+                   console.log(category_label)
                   $("#dropdown_category").append(dropdown_category);
                   
                 }
-    
-                    }
-                });                                    
-            });
-    
-              </script>
 
+
+
+
+                        
+                });
+            
+          </script>
         </ul>
-      </li>
-
-
-
-
-
-       <!--
-        <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul id="dropdown_category" >
-            <li><a href="gallery.html">Nature</a></li>
-            <li><a href="gallery.html">People</a></li>
-            <li><a href="gallery.html">Architecture</a></li>
-            <li><a href="gallery.html">Animals</a></li>
-            <li><a href="gallery.html">Sports</a></li>
-            <li><a href="gallery.html">Travel</a></li>
-          </ul>
         </li>
-        -->
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav><!-- .navbar -->
