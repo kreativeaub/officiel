@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
     el.addEventListener('click', function(event) {
+      console.log(event)
       event.preventDefault();
       mobileNavToogle();
     })
@@ -142,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      320: {
+      390: {
         slidesPerView: 1,
         spaceBetween: 40
       },
