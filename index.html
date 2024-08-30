@@ -60,7 +60,7 @@
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Kreativeaub</h1>
+        <h1>Kreative aub</h1>
       </a>
   
       <nav id="navbar" class="navbar">
@@ -83,10 +83,6 @@
                     $("#dropdown_category").append(dropdown_category);
                     
                   }
-  
-  
-  
-  
                           
                   });
               
@@ -117,18 +113,16 @@
   <!-- ======= Header ======= -->
 
 
-
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <section id="gallery-single" class="gallery-single">
       <div class="container">
 
-        <div  class="slides-3 swiper">
-          <div id="category_items" class="swiper-wrapper"></div>
-        <script type="text/javascript">
+      <div class="slides-1 portfolio-details-slider swiper">
+		  <div  id="category_items" class="swiper-wrapper align-items-center">
 
-        
+   
+          <script type="text/javascript">
+
           var dir = "assets/img/category/";
           var fileextension = ".jpg";
          
@@ -145,37 +139,33 @@
                 var category_label=category.replaceAll("_", " ");
                 var filename=dir+result[i].name;
 
-                let category_img='<div class="swiper-slide"><div class="testimonial-item"><a href="gallery.html?category='+category+'"><img class="lazyload" src='+filename+' data-src='+filename+' alt=""></img></a><h4>'+category_label+'</h4></div></div>'  
+                let category_img='<div class="swiper-slide"><img class="lazyload" src='+filename+' data-src='+filename+' alt=""><a href="gallery.html?category='+category+'"><div class="overlay-single"><div class="text">'+category_label+'</div></div></a></div>' 
+
+
+
+               // let category_img='<div class="swiper-slide"><img class="lazyload" src='+filename+' data-src='+filename+' alt=""><h4 class="center">'+category_label+'</h4></div>'  
                 
                 $("#category_items").append(category_img);
-                
-              }
-  
-          }
-      });                                    
-  });
+                        
+                      }
+          
+                  }
+              });                                    
+          });
   
             </script>
 
-          
+          </div>
+            <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          <p>
-
-          </p>
-          
-
-          <div class="swiper-pagination"></div>
-
-          </div>
 
         </div>
-        
 
       </div>
     </section><!-- End Testimonials Section -->
 
-  </main><!-- End #main -->
+
 
 
 

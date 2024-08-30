@@ -104,28 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
     selector: '.glightbox'
   });
 
-  /**
-   * Init swiper slider with 1 slide at once in desktop view
+  
+   // Init swiper slider with 1 slide at once in desktop view
    
  
-  new Swiper('.slides-1', {
-    speed: 800,
-    loop: false,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-  });
-
-  
-   */
-  new Swiper('.slides-3', {
+   new Swiper('.slides-1', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -143,13 +126,59 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      390: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      }
+    }
+  });
+
+
+  
+  new Swiper('.slides-3', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
         slidesPerView: 1,
         spaceBetween: 40
       },
-
-      1200: {
-        slidesPerView: 3,
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 60,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 70,
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 80,
       }
     }
   });
